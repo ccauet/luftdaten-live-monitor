@@ -15,8 +15,18 @@
       <p class="subtitle">
         Aktuelle Temperatur und relative Luftfeuchtigkeit
       </p>
-      <p class='current-temperature'> °C</p>
-      <p class='current-humidity'>%</p>
+      <div class="tile is-ancestor">
+        <div class="tile is-2 is-vertical is-parent">
+          <div class="tile is-child box">
+            <p class="title">🌡 <span id="current-temperature"></span>°C</p>
+          </div>
+        </div>
+        <div class="tile is-2 is-vertical is-parent">
+          <div class="tile is-child box">
+            <p class="title">💧 <span id="current-humidity"></span>%</p>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
   <script src="static/js/jquery-3.3.1.min.js"></script>
